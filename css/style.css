@@ -3,16 +3,25 @@ body{
 }
 header{
     height:400px;
-    background-color: blueviolet;
+    
+    background-image: url(../images/slide.jpg);
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+  background-size: cover;
+  
+  background-color: #464646;
 }
 nav{
-    height: 90px;
+    height: 80px;
     width: 100%;
     background-color:black ;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 80%;
 
 }
 nav ul{
@@ -35,7 +44,7 @@ section{
     
 }
 
-.games{
+.gamesection{
     height: 500px;
     background-color: #14123E;
     color: white;
@@ -83,7 +92,8 @@ section{
 }
 
 .game img{
-    border:black 2px solid;
+   
+    transform: skew(-10deg);
 }
 #viewall{
     float: right;
