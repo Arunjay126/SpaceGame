@@ -30,13 +30,49 @@ nav{
     opacity: 80%;
 
 }
+#profil{
+    margin-right:5% ;
+    list-style: none;
+    width: 130px;
+    border:yellow solid 2px;
+}
+#profil img{
+    float: right;
+    cursor: pointer;
+}
+#profil li{
+    float: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+#profil a{
+    text-align: center;
+    font-size: 10px;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+
 nav ul{
-    margin: 0 20px;
+    margin: 0 30px 0px;
+    
+
 }
 nav ul li{
     display: inline-block;
+    margin-left:15px;
     padding: 5px;
     font-size: 25px;
+    cursor: pointer;
+    border-left: solid 5px white;
+    border-right: solid 5px white;
+    border-radius: 100%;
+}
+.active{
+    background-color: #28256B;
+    border-color: #28256B;
+    font-style: oblique;
+    font-size: 30px;
 }
 #logo{
    font-size: 60px;
@@ -72,7 +108,33 @@ section{
     display: inline;
 
 }
-
+#searchBar{
+    margin-top:20px;
+      
+}
+#searchBar span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.search{
+    border-radius: 10px;
+    border-style: none;
+    width: 300px;
+    padding: 5px;
+    font-style: italic;
+    font-size:20px;
+    color: grey;
+    
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-top: 10px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
 .GameGrid{
   
    width: 800px;
@@ -107,6 +169,7 @@ section{
     margin-right: 35px;
     border:white 2px solid;
     transform: skew(-10deg);
+    cursor: pointer;
 }
 
 .advantages{
@@ -239,8 +302,11 @@ form{
 }
 .inputus{
     width: 300px;
+    margin-top:10px;
 }
 #message{
+    display: block;
+    margin-top:10px;
     height: 100px;
     text-align: start;
 }
@@ -253,6 +319,7 @@ form{
     color: white;
     font-weight: bold;
     font-style: italic;
+    cursor: pointer;
     
     
 }
