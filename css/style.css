@@ -4,7 +4,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-color: violet;
+    background-color: #14123E;
     font-family: 'verdana';
     color: white;
 }
@@ -114,7 +114,7 @@ nav ul li{
 }
 section{
     height: 350px;
-    background-color:chocolate;
+    
     
 }
 
@@ -127,7 +127,7 @@ section{
     
 }
 .GameSuggest{
-    height: 200px;
+    height: 245px;
     
 }
 #slogan{
@@ -197,12 +197,14 @@ section{
     text-align: center;
     display: inline-block;
     margin-left: 30px;
+    cursor: pointer;
 
 }
 .game h4{
     display: inline;
     align-content: center;
     font-size:15px;
+    cursor: pointer;
 }
 
 .game img{
@@ -378,6 +380,55 @@ footer{
 footer div{
     text-align: center;
     padding-top:60px;
+}
+.logIn{
+        
+    align-items: center;
+    width: 380px;
+    height: 250px;
+    padding: 30px;
+    margin: 5% 0px 0px 30% ;
+    
+}
+.logIn div{
+    background-color: #3A385D;
+   
+   border-radius: 15px;
+   height: 200px;
+ 
+}
+.logIn h1{
+    margin: 0 10%;
+    font-size:40px;
+    color: #86859B;
+}
+.logIn h1 span{
+    font-size:50px;
+    color: white;
+}
+.logInButton{
+    display: block;
+    margin: 5px 60% 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #64BB64;
+    color: white;
+    font-style: italic;
+}
+.logIn P{
+    font-size:10px;
+}
+
+.logInInputs{
+    
+    margin-top:20px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    
 }
 footer div p{
     display: inline-block;
