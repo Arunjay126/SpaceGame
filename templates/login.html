@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpaceG</title>
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}">
+    </head>
+   
+    <body>
+       
+        <section class="logIn">
+            <h1>Space<span>G</span></h1>
+            
+            <div>
+                <form method="POST" action="/login">
+                    <input class="logInInputs" type="email" name="email" placeholder="Email">
+                    <input class="logInInputs" type="password" name="password" placeholder="Password">
+            
+            <p>Click here to creat an account ,<a href="{{ url_for('auth.signup')}}">SIGN UP</a></p>
+            <button class ="logInButton">Log in</button>
+        </form>
+        </div>
+        </section>
+    </body>
+</html>

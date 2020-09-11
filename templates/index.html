@@ -2,8 +2,9 @@
 
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>SpaceG</title>
-        <link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}">
     </head>
 
     <body>
@@ -13,11 +14,11 @@
                     SpaceG
                 </div>
                 <ul>
-                    <li class="active">Games</li>
-                    <li>Why us</li>
-                    <li>Contact Us</li>
-                    <li>Login</li>
-                    <li>Sign Up</li>
+                    <li><a href="{{ url_for('main.index') }}">Games</li>
+                    <li><a href="#whyus">why us</a></li>
+                    <li><a href="#contactus">Contact Us</li>
+                   <li> <a href="{{ url_for('auth.login') }}">Login</a></li>
+                    <li><a href="{{ url_for('auth.signup') }}">Sign Up</a></li>
                 </ul>
             </nav>
 
@@ -33,27 +34,27 @@
             <div class="GameGrid">
 
                 <div class="game">
-                    <img src="images/snaky.jpg" height="150px" width="180px">
+                    <img src="static/images/snaky.jpg" height="150px" width="180px">
                     <h4>Snake Fight</h4>
                 </div>
                 <div class="game">
-                    <img src="images/mobileLegend.jpg" height="150px" width="180px">
+                    <img src="static/images/mobileLegend.jpg" height="150px" width="180px">
                     <h4>Mobile Legend</h4>
                 </div>
                 <div class="game">
-                    <img src="images/freefire.png" height="150px" width="180px">
+                    <img src="static/images/freefire.png" height="150px" width="180px">
                     <h4>Freefire</h4>
                 </div>
                 <div class="game">
-                    <img src="images/pubg.jpg" height="150px" width="180px">
+                    <img src="static/images/pubg.jpg" height="150px" width="180px">
                     <h4>PUBG</h4>
                 </div>
                 <div class="game">
-                    <img src="images/callofdutymoderanwarfare.jpg" height="150px" width="180px">
+                    <img src="static/images/callofdutymoderanwarfare.jpg" height="150px" width="180px">
                     <h4>Call of Duty</h4>
                 </div>
                 <div class="game">
-                    <img src="images/GTA.jpg" height="150px" width="180px">
+                    <img src="static/images/GTA.jpg" height="150px" width="180px">
                     <h4>GTA San andreas</h4>
                 </div>
 
@@ -76,31 +77,31 @@
                 </p>
             </div>
         </section>
-        <section class="whyus">
+        <section class="whyus" id="whyus">
             <h1>Why choosing SpaceG Website ?</h1>
             <p id="weprovide">We provide all-in-one solution with ease of use system as well as exciting plans !, Don't miss your free trial !!!
                 Our mission is to make you comfortable playing your favorite games in your browser without worrying about the rest 
             </p>
             <div id="threeBenefits">
                 <div class="benef">
-                    <img src="icons/user-experience.svg" height="50px" width="50px">
+                    <img src="static/icons/user-experience.svg" height="50px" width="50px">
                     <h4>Easy of use</h4>
                     <p>User Friendly interface , only few steps you can start playing</p>
                 </div>
                 <div class="benef">
-                    <img src="icons/free.svg" height="50px" width="50px">
+                    <img src="static/icons/free.svg" height="50px" width="50px">
                     <h4>Free Plan</h4>
                     <p>Just start you don't have to worry about the cost</p>
                 </div>
                 <div class="benef">
-                    <img src="icons/bot.svg" height="50px" width="50px">
+                    <img src="static/icons/bot.svg" height="50px" width="50px">
                     <h4>Friendly customer Support</h4>
                     <p>Facing problem , don't know how to do ? Don't worry ! you can contact us !!!</p>
                 </div>
             </div>
         </section>
         <section class="contactus">
-            <h1>Contact Us</h1>
+            <h1 id="contactus">Contact Us</h1>
             <form>
             <input class="inputus" type="email" value="Email">
             <textarea class="inputus" id="message" rows="10" cols="100">Your Message</textarea>

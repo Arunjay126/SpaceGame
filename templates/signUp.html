@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpaceG</title>
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}">
+    </head>
+   
+    <body>
+       
+        <section class="logIn signUp">
+            <h1>Space<span>G</span></h1>
+            
+            <div>
+                <form method="POST" action="/signup">
+                    <input class="logInInputs" type="email" name="email" placeholder="Email">
+                 
+                    <input class="logInInputs" type="name" name="name" placeholder="Name">
+                    <input class="logInInputs" type="password" name="password" placeholder="password">
+                    <element id="TermsCheck">
+                    <input type="checkbox" id="agreeTerms" name="Terms">
+                    <label for="agreeTerms" value="Agree"><p>By cheking you agree to accept terms and services  ,<a href="#">Policy</a></p></label>
+                    </element>
+                    <button class ="logInButton">Start Now</button>
+                </form>
+            
+           
+        </div>
+        </section>
+    </body>
+</html>

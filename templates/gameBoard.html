@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>SpaceG</title>
-        <link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}">
     </head>
 
     <body>
@@ -14,9 +14,9 @@
                 </div>
                 
                 <ol id="profil">
-                    <img src="icons/user.svg" height="32px" width="32px">
-                    <li>@brahimang</li>
-                    <li><a href="#" >Log out</a></li>
+                    <img src="static/icons/user.svg" height="32px" width="32px">
+                    <li>@{{ name }}</li>
+                    <li><a href="{{ url_for('auth.logout')}}" >Log out</a></li>
 
                 </ul>
             </nav>
@@ -34,27 +34,27 @@
             <div class="GameGrid">
 
                 <div class="game">
-                    <img src="images/snaky.jpg" height="150px" width="180px">
+                    <img src="static/images/snaky.jpg" height="150px" width="180px">
                     <h4>Snake Fight</h4>
                 </div>
                 <div class="game">
-                    <img src="images/mobileLegend.jpg" height="150px" width="180px">
+                    <img src="static/images/mobileLegend.jpg" height="150px" width="180px">
                     <h4>Mobile Legend</h4>
                 </div>
                 <div class="game">
-                    <img src="images/freefire.png" height="150px" width="180px">
+                    <img src="static/images/freefire.png" height="150px" width="180px">
                     <h4>Freefire</h4>
                 </div>
                 <div class="game">
-                    <img src="images/pubg.jpg" height="150px" width="180px">
+                    <img src="static/images/pubg.jpg" height="150px" width="180px">
                     <h4>PUBG</h4>
                 </div>
                 <div class="game">
-                    <img src="images/callofdutymoderanwarfare.jpg" height="150px" width="180px">
+                    <img src="static/images/callofdutymoderanwarfare.jpg" height="150px" width="180px">
                     <h4>Call of Duty</h4>
                 </div>
                 <div class="game">
-                    <img src="images/GTA.jpg" height="150px" width="180px">
+                    <img src="static/images/GTA.jpg" height="150px" width="180px">
                     <h4>GTA San andreas</h4>
                 </div>
 

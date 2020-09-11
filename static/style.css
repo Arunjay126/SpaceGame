@@ -8,10 +8,11 @@ body{
     font-family: 'verdana';
     color: white;
 }
+
 header{
     height:400px;
     
-    background-image: url(../images/slide.jpg);
+    background-image: url("./images/slide.jpg");
     background-position: center center;
     /* Background image doesn't tile */
     background-repeat: no-repeat;
@@ -33,6 +34,10 @@ nav{
     align-items: center;
     opacity: 80%;
 
+}
+a{
+    text-decoration:none;
+    color: white;
 }
 #profil{
     margin-right:5% ;
@@ -96,9 +101,8 @@ nav ul li{
     padding: 5px;
     font-size: 25px;
     cursor: pointer;
-    border-left: solid 5px white;
-    border-right: solid 5px white;
-    border-radius: 100%;
+    color: white;
+    
 }
 .active{
     background-color: #28256B;
@@ -420,6 +424,10 @@ footer div{
 .logIn P{
     font-size:10px;
 }
+.logIn a{
+    color: yellow;
+    text-decoration: initial;
+}
 
 .logInInputs{
     
@@ -429,7 +437,39 @@ footer div{
     padding: 10px;
     width: 50%;
     
+    
 }
+.signUp{
+    height: 400px;
+}
+.signUp div{
+    height: 310px;
+}
+.signUp div p{
+    display: inline;
+    margin: 0;
+    font-size:7px;
+    
+}
+
+#agreeTerms{
+    display: inline;
+    border-style: none;
+    border-radius: 40px;
+   color: black;
+   
+}
+#TermsCheck{
+    display: block;
+    margin-top:10px ;
+  
+    height: 25px;
+    width: 250px;
+    padding: 0;
+    align-items: center;
+}
+
+
 footer div p{
     display: inline-block;
     
