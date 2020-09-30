@@ -389,7 +389,7 @@ footer div{
         
     align-items: center;
     width: 380px;
-    height: 250px;
+    height: 300px;
     padding: 30px;
     margin: 5% 0px 0px 30% ;
     
@@ -398,7 +398,7 @@ footer div{
     background-color: #3A385D;
    
    border-radius: 15px;
-   height: 200px;
+   height: 300px;
  
 }
 .logIn h1{
@@ -414,7 +414,7 @@ footer div{
     display: block;
     margin: 5px 60% 20px;
     padding: 5px 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     border-style: none;
     cursor: pointer;
     background-color: #64BB64;
@@ -469,4 +469,11 @@ footer div{
 footer div p{
     display: inline-block;
     
+}
+
+#snakeboard{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

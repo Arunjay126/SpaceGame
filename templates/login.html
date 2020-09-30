@@ -11,6 +11,13 @@
             <h1>Space<span>G</span></h1>
             
             <div>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+            <span class="authWarning">
+                {{ messages[0] }}
+            </span>
+                {% endif %}
+                {% endwith %}
                 <form method="POST" action="/login">
                     <input class="logInInputs" type="email" name="email" placeholder="Email">
                     <input class="logInInputs" type="password" name="password" placeholder="Password">

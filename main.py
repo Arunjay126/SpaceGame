@@ -13,7 +13,7 @@ def index():
 def gameboard():
     return render_template('gameBoard.html',name = current_user.name)
 
-@main.route('/gameplay')
-@login_required
-def gameplay():
-    return render_template('gamePlay.html',name = current_user.name)
+
+@main.route('/startgame')
+def startgame():
+    return render_template('gamePlay.html')
